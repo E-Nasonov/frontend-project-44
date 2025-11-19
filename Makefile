@@ -12,5 +12,8 @@ publish:
 
 lint:
 	npx eslint .
+	
+lint-fix:
+	npx eslint --fix .
 
 .PHONY: install brain-games publish lint
