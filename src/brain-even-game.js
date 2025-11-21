@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync'
+import crypto from 'crypto'
 
 // Проверка чётности числа
 const isEven = number => number % 2 === 0
 
 // Генерация случайного числа от 0 до 100 включительно
-const getRandomNumber = () => Math.floor(Math.random() * 101)
+const getRandomNumber = () => crypto.randomInt(0, 101)
 
 export default () => {
   // Приветствие, получение имени и объяснение правил
