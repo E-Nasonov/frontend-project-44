@@ -26,7 +26,10 @@ const runGame = (gameRules, gameData) => {
   const answersRequired = 3
   for (let correctAnswersCount = 0; correctAnswersCount < answersRequired; correctAnswersCount += 1) {
     // получение данных для вопроса и правильного ответа
-    const [question, correctAnswer] = gameData()
+    let [question, correctAnswer] = gameData()
+
+    // приведение правильного ответа к типу "строка" для строгого сравнения с ответом пользователя (всегда строка)
+    correctAnswer = String(correctAnswer)
 
     // вопрос пользователю и получение его ответа
     console.log(`Question: ${question}`)
