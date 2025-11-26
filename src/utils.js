@@ -12,7 +12,7 @@ export const getRandomNumber = (min = 0, max = 100) => crypto.randomInt(min, max
 // Выбор математического оператора из массива по случайному индексу
 export const getRandomOperator = () => {
   const operators = ['+', '-', '*']
-  const randomIndex = crypto.randomInt(0, operators.length)
+  const randomIndex = getRandomNumber(0, operators.length - 1)
   return operators[randomIndex]
 }
 

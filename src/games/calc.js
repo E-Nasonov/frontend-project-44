@@ -13,9 +13,9 @@ const gameRules = 'What is the result of the expression?'
 
 // данные для игры
 const gameData = () => {
-  // генерация 2-х случайных операндов (от 0 до 20 включительно) и оператора
-  const a = getRandomNumber(0, 20)
-  const b = getRandomNumber(0, 20)
+  // генерация 2-х случайных операндов (от 0 до 10 включительно) и оператора
+  const a = getRandomNumber(0, 10)
+  const b = getRandomNumber(0, 10)
   const operator = getRandomOperator()
 
   // вопрос пользователю - полученное математическое выражение
