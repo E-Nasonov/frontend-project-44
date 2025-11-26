@@ -6,10 +6,17 @@
 // например 35 + 16, которое нужно вычислить и записать правильный ответ.
 // ----------------------------------------------------------------------
 
-import { getRandomNumber, getRandomOperator } from '../utils.js'
+import { getRandomNumber } from '../utils.js'
 
 // правила игры
 const gameRules = 'What is the result of the expression?'
+
+// Выбор математического оператора из массива по случайному индексу
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*']
+  const randomIndex = getRandomNumber(0, operators.length - 1)
+  return operators[randomIndex]
+}
 
 // данные для игры
 const gameData = () => {

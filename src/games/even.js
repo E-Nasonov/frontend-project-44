@@ -6,10 +6,13 @@
 // Нужно ответить "yes", если число чётное, или "no" — если нечётное
 // ----------------------------------------------------------------------
 
-import { getRandomNumber, isEven } from '../utils.js'
+import { getRandomNumber } from '../utils.js'
 
 // правила игры
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+// Проверка чётности числа
+const isEven = number => number % 2 === 0
 
 // данные для игры
 const gameData = () => {
