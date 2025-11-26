@@ -14,24 +14,24 @@ const gameRules = 'What is the result of the expression?'
 // данные для игры
 const gameData = () => {
   // генерация 2-х случайных операндов (от 0 до 20 включительно) и оператора
-  const firstOperand = getRandomNumber(0, 20)
-  const secondOperand = getRandomNumber(0, 20)
+  const a = getRandomNumber(0, 20)
+  const b = getRandomNumber(0, 20)
   const operator = getRandomOperator()
 
   // вопрос пользователю - полученное математическое выражение
-  const question = `${firstOperand} ${operator} ${secondOperand}`
+  const question = `${a} ${operator} ${b}`
 
   // получение правильного ответа в соответствии с выпавшим оператором
   let correctAnswer
   switch (operator) {
     case '+':
-      correctAnswer = firstOperand + secondOperand
+      correctAnswer = a + b
       break
     case '-':
-      correctAnswer = firstOperand - secondOperand
+      correctAnswer = a - b
       break
     case '*':
-      correctAnswer = firstOperand * secondOperand
+      correctAnswer = a * b
       break
     default:
       throw new Error(`Unknown operator: ${operator}`)
