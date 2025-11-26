@@ -13,15 +13,25 @@ const gameRules = 'Find the greatest common divisor of given numbers.'
 
 // данные для игры
 const gameData = () => {
-  // генерация 2-х случайных чисел (от 0 до 25 включительно)
-  const a = getRandomNumber(0, 25)
-  const b = getRandomNumber(0, 25)
+  // алгоритм генерации случайной пары чисел от обратного:
+  // саначала генерация случаного наибольшего общего делителя
+  const gcd = getRandomNumber(2, 5)
 
-  // вопрос пользователю - полученное математическое выражение
-  const question = `${a} ${b}`
+  // а затем генерация двух случайных чисел и перемножение на НОД для получения пары
+  const firstNumber = getRandomNumber(1, 5) * gcd
+  let secondNumber = getRandomNumber(1, 5) * gcd
 
-  // получение правильного ответа в соответствии с выпавшим оператором
-  const correctAnswer = getGCD(a, b)
+  // убеждаемся что числа в полученной паре не равны друг другу:
+  // если числа равны, то НОД будет равен этому же числу вне зависимости от сгенерированного НОД
+  while (firstNumber === secondNumber) {
+    secondNumber = getRandomNumber(1, 5) * gcd
+  }
+
+  // вопрос пользователю - полученная пара чисел
+  const question = `${firstNumber} ${secondNumber}`
+
+  // получение правильного ответа
+  const correctAnswer = getGCD(firstNumber, secondNumber)
 
   return [question, correctAnswer]
 }
