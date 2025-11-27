@@ -10,3 +10,5 @@
 [![ASCII Cast](https://asciinema.org/a/XvMBNSsP8A09Un6uTPRyvxV5K.svg)](https://asciinema.org/a/XvMBNSsP8A09Un6uTPRyvxV5K)
 ## Brain GCD Game Demo
 [![ASCII Cast](https://asciinema.org/a/9Boe80irKmUIW4fQ38u4yzgoN.svg)](https://asciinema.org/a/9Boe80irKmUIW4fQ38u4yzgoN)
+## Brain Progression Game Demo
+[![ASCII Cast](https://asciinema.org/a/ejgFhsHT3wVEHP9a3ssSQSHNk.svg)](https://asciinema.org/a/ejgFhsHT3wVEHP9a3ssSQSHNk)
