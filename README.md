@@ -12,3 +12,5 @@
 [![ASCII Cast](https://asciinema.org/a/9Boe80irKmUIW4fQ38u4yzgoN.svg)](https://asciinema.org/a/9Boe80irKmUIW4fQ38u4yzgoN)
 ## Brain Progression Game Demo
 [![ASCII Cast](https://asciinema.org/a/ejgFhsHT3wVEHP9a3ssSQSHNk.svg)](https://asciinema.org/a/ejgFhsHT3wVEHP9a3ssSQSHNk)
+## Brain Prime Game Demo
+[![ASCII Cast](https://asciinema.org/a/ResOFE3S3wnmKua9LB3znFNIM.svg)](https://asciinema.org/a/ResOFE3S3wnmKua9LB3znFNIM)
