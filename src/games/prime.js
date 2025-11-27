@@ -71,7 +71,7 @@ const gameData = () => {
   const sequence = usePrime ? primes : nonPrimes
 
   // вопрос пользователю - случайное число из выбранного массива
-  const question = sequence[getRandomNumber(0, primes.length - 1)]
+  const question = sequence[getRandomNumber(0, sequence.length - 1)]
 
   // правильный ответ уже известен
   const correctAnswer = usePrime ? 'yes' : 'no'
