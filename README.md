@@ -21,7 +21,10 @@ npm ci
 npm link
 ```
 5. Launching Games:
-- Run the command in the your terminal to start the corresponding game.
+```
+Run the command in the your terminal to start the corresponding game.
+```
+### Installation and launch
 [![ASCII Cast](https://asciinema.org/a/zofdMnLdO9ZV1Ld6yf9ZB2QJD.svg)](https://asciinema.org/a/zofdMnLdO9ZV1Ld6yf9ZB2QJD)
 
 # Available Games
@@ -41,14 +44,3 @@ npm link
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=E-Nasonov_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=E-Nasonov_frontend-project-44)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=E-Nasonov_frontend-project-44&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=E-Nasonov_frontend-project-44)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=E-Nasonov_frontend-project-44&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=E-Nasonov_frontend-project-44)
-
-
-git clone https://github.com/E-Nasonov/frontend-project-44.git
-
-cd frontend-project-44
-
-npm ci
-
-npm link
-
-brain-games
